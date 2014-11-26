@@ -1,0 +1,11 @@
+<section>
+	<ul class="list-group student-list">
+		<li class="list-group-item profile {{student.getColor()}}" ng-repeat="student in vm.students">
+			<a ui-sref="students.editStudent({ id: student.id })">{{student.ProfileName}} </a>
+			<span class="pull-right glyphicon glyphicon-remove remove"></span>
+		</li>
+		<li class="list-group-item">
+			<a ui-sref="students.createStudent"><span class="glyphicon glyphicon-plus"></span> Add New Student</a>
+		</li>
+	</ul>
+</section>

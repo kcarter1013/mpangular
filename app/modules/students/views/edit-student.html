@@ -1,0 +1,34 @@
+<section>
+	<div class="form-group">
+		<label for="">First Name</label>
+		<input type="text" class="form-control" ng-model="sub.dto.FirstName" id="" placeholder="">
+	</div>
+	<div class="form-group">
+		<label for="">Last Name</label>
+		<input type="text" class="form-control" ng-model="sub.dto.LastName" id="" placeholder="">
+	</div>
+	<div class="form-group">
+		<label for="">Profile Name</label>
+		<input type="text" class="form-control" id="" ng-model="sub.dto.ProfileName" placeholder="">
+	</div>
+	<div class="form-group">
+		<label for="">PIN</label>
+		<input type="text" class="form-control" id="" ng-model="sub.dto.Pin" placeholder="">
+	</div>
+	<div class="form-group">
+		<label for="">Color</label>
+		<input type="" class="form-control" id="" placeholder="">
+	</div>
+
+	<p>Student Name: {{sub.dto.getProfileName()}} {{sub.dto.getProfileStatus()}}</p>
+	<p>Profile Name: <span ng-bind="sub.dto.ProfileName"></span></p>
+	<input type="text" ng-model="newProfileName" />
+	<button ng-click="sub.dto.setProfileName(newProfileName)">Change Name</button>
+	<hr />
+	<ul>
+		<li ng-repeat="student in vm.students">
+			<button ng-click="sub.remove(student.id)"> Remove me </button>
+			<a ui-sref="students.editStudent({ id: student.id })">{{student.FirstName}}</a>
+		</li>
+	</ul>
+</section>

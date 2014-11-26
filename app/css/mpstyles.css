@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Oswald Light';
+  font-weight: 300;
+  src: url('../fonts/Oswald-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald Regular';
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  font-weight: 700;
+  src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Light';
+  font-weight: 300;
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Regular';
+  font-weight: 400;
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  font-weight: 700;
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+h1#app-heading{
+	font-size:18px;
+	text-align: center;
+	text-transform: uppercase;
+	color:purple;
+	background-color:#fff;
+	font-family: 'Lato Light';
+}
+/* ANGULAR CLOAK OVERRIDE */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+/* BOOTSTRAP OVERRIDES */
+ ul.nav{
+	width:100%;
+	display:table;
+	margin: 0 auto;
+}
+.nav > li{
+	display:table-cell;
+	overflow:hidden;
+	margin:auto;
+	text-align:center;
+	font-size:24px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	border-top: 2px solid #45176F;
+	color:#333;
+	background-color:transparent;
+}
+
+/* IONIC OVERRIDES */
+body{
+	font-family: 'Lato Light';
+}
+ion-nav-view{
+	background-color:#fff;
+}
+.bar.bar-stable{
+	background-color:#eaeaea;
+	font-family: 'Oswald Light';
+	text-transform: uppercase;
+}
+.bar.bar-stable .title{
+	color:rgb(141, 39, 129);
+	text-transform: uppercase;
+	font-family: 'Oswald Light';
+}
+
+.button.button-mp-default{
+	background-color:#eaeaea;
+	border: 1px solid rgb(226, 226, 226);
+	border-bottom:2px solid rgb(199, 199, 199);
+	color:rgb(141, 39, 129);
+	text-transform: uppercase;
+	font-family: 'Oswald Regular';
+}
+.button.button-full{
+	width:100%;
+}
+
+/* Your application styles go here */
+
+.init-view{
+	text-align: center;
+	margin: auto;
+	
+}
+
+.welcome-screen h2{
+	font-family: 'Lato Regular';
+	font-weight: 400;
+	font-size: 24px;
+}
+.welcome-screen h2 strong{
+	font-family: 'Lato Bold';
+	font-weight: 700;
+}
+.welcome-screen h3{
+	font-family:'Oswald Bold', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:rgb(195, 195, 195);
+	margin-bottom: 40px;
+}
+
+/* Single Day View */
+
+.single-day-view .title{
+	font-size: 18px;
+	margin: 5px 0;
+	text-transform: uppercase;
+	font-family: 'Oswald Regular';
+	color:rgb(141, 39, 129);
+	background-color:#eaeaea;
+}
+.single-day-view .title .day{
+	font-size: 16px;
+	font-family: 'Oswald Light';
+}
+
+/* LUNCH ICONS */
+span.lunch-icon{
+	font-size: 25px;
+	float: right;
+	margin-right: 10px;
+	position: relative;
+}
+
+.specials-icon{
+	font-size: 18px;
+	font-family: 'Oswald Bold';
+	float: left;
+	margin-left: 10px;
+}
+
+/* DASHBOARD VIEW */
+.dashboard-view .row{
+	margin:0;
+	padding: 0;
+}
+form{
+	margin-top: 10px;
+}
+form[name="newProfile"]{
+	width: 90%;
+	margin: 20px auto;
+	background-color:rgba(240, 240, 240, 0.6);
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	padding: 15px;
+}
+.form-group {
+	padding: 5px 15px;
+}
+.form-group > input, .form-group > select{
+	display:block;
+	width:100%;
+}
+ .form-group > button{
+	margin: 15px auto;
+	width: 100%;
+}
+
+
+
+/* Student Profiles */
+ul.student-list > li.profile{
+	border-bottom: 3px solid #777;
+}
+ul.student-list > li.profile.Blue{
+	border-bottom-color:#3498db;
+}
+ul.student-list > li.profile.Red{
+	border-bottom-color:#e74c3c;
+}
+ul.student-list > li.profile.Green{
+	border-bottom-color:#2ecc71;
+}
+ul.student-list > li > span.profileColor{
+	background-color:#777;
+	display:inline-block;
+	overflow:hidden;
+	margin-right: 10px;
+	margin-left: 5px;
+	width: 15px;
+	height: 15px;
+}
+ul.student-list > li > span.remove{
+	line-height: 2;
+	position: relative;
+	top: -4px;
+	padding-left:5px;
+	padding-right:5px;
+}
+ul.student-list > li > a{
+	width: 80%;
+	display:inline-block;
+}
+.legend span{
+	padding: 5px 15px;
+	border:1px solid #999;
+	margin: 0 15px;
+	overflow: hidden;
+}
+ul.student-list > li > span.profileColor.Blue{
+	background-color:#3498db;
+}
+ul.student-list > li > span.profileColor.Red{
+	background-color:#e74c3c;
+}
+ul.student-list > li > span.profileColor.Green{
+	background-color:#2ecc71;
+}
+
+/* Animate */
+.animate-enter, 
+.animate-leave
+{ 
+  -webkit-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+} 
+ 
+.animate-enter.animate-enter-active, 
+.animate-leave {
+  opacity: 1;
+  top: 0;
+  height: 30px;
+}
+ 
+.animate-leave.animate-leave-active,
+.animate-enter {
+  opacity: 0;
+  top: -50px;
+  height: 0px;
+}

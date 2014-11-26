@@ -1,0 +1,37 @@
+<section>
+	<h4>Create Student Profile</h4>
+	<form name="newProfile" ng-controller="StudentsController as v" ng-submit="v.registerNewStudent()">
+		<div class="form-group">
+			<label class="input-label">Student First Name: </label>
+			<input type="text" required name="FirstName" placeholder="First Name" ng-model="v.newStudent.FirstName" />
+			<span class="error" ng-show="newProfile.FirstName.$error.required">This field is required.</span>
+		</div>
+		<div class="form-group">
+			<label class="input-label">Student Last Name: </label>
+			<input type="text" required name="LastName" placeholder="Last Name" ng-model="v.newStudent.LastName" />
+			<span class="error" ng-show="newProfile.LastName.$error.required">This field is required.</span>
+		</div>
+		<div class="form-group">
+			<label class="input-label">Profile Name: </label>
+			<input type="text" name="ProfileName" placeholder="Profile Name" ng-model="v.newStudent.ProfileName" />
+			<span class="error" ng-show="newProfile.ProfileName.$error.required">This field is required.</span>
+		</div>
+		<div class="form-group">
+			<label class="input-label">Pin: </label>
+			<input type="text" ng-required="true" name="Pin" placeholder="PIN Number" ng-model="v.newStudent.Pin" />
+			<span class="error" ng-show="newProfile.Pin.$error.required">This field is required.</span>
+
+		</div>
+		<div class="form-group">
+			<div class="input-label">
+				Profile Color: 
+			</div>
+			<select ng-model="vm.newStudent.Color">
+				<option ng-selected="Blue" ng-value="Blue">Blue</option>
+				<option ng-value="Green">Green</option>
+				<option ng-value="Red">Red</option>
+			</select>
+		</div>
+		<input type="submit" value="Add Student" class="button button-full button-mp-default"/>
+	</form>
+</section>

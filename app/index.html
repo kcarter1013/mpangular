@@ -1,0 +1,123 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/custom.css -->
+        <!-- injector:css -->
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/customcordova.css" />
+        <link rel="stylesheet" href="css/demo.css" />
+        <link rel="stylesheet" href="css/mpstyles.css" />
+        <!-- endinjector -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!-- =================== Navigation bar =================== -->
+    <header class="navbar navbar-default navbar-fixed-bottom">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#!/dashboard"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="#!/newsfeed"><span class="glyphicon glyphicon-list-alt"></span></a></li>
+                        <li><a href="#!/calendar"><span class="glyphicon glyphicon-calendar"></span></a></li>
+                        <li><a href="#!/school"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+                        <li><a href="#!/students"><span class="glyphicon glyphicon-user"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div role="main">
+        <header class="bs-header text-center" id="overview">
+            <div class="container">
+                <h1 id="app-heading">
+                    <span class="pull-left">
+                        <a href="#!/"><span class="glyphicon glyphicon-home"></span></a>
+                    </span>
+                    Manchester Park
+                    <span class="pull-right">
+                        <a href="#!/settings"><span class="glyphicon glyphicon-cog"></span></a>
+                    </span>
+                </h1>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <section id="uiview" ui-view></section>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+ 
+
+    <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-mocks/angular-mocks.js"></script>
+        <script src="lib/angular-cookies/angular-cookies.js"></script>
+        <script src="lib/angular-animate/angular-animate.js"></script>
+        <script src="lib/angular-touch/angular-touch.js"></script>
+        <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+        <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="lib/angular-ui-utils/ui-utils.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/custom.js -->
+        <!-- injector:js -->
+        <script src="js/config.js"></script>
+        <script src="js/application.js"></script>
+        <script src="modules/calendar/calendar.js"></script>
+        <script src="modules/core/core.js"></script>
+        <script src="modules/dashboard/dashboard.js"></script>
+        <script src="modules/newsfeed/newsfeed.js"></script>
+        <script src="modules/school/school.js"></script>
+        <script src="modules/settings/settings.js"></script>
+        <script src="modules/students/students.js"></script>
+        <script src="modules/calendar/config/routes.js"></script>
+        <script src="modules/core/config/routes.js"></script>
+        <script src="modules/dashboard/config/routes.js"></script>
+        <script src="modules/newsfeed/config/routes.js"></script>
+        <script src="modules/school/config/routes.js"></script>
+        <script src="modules/settings/config/routes.js"></script>
+        <script src="modules/students/config/routes.js"></script>
+        <script src="modules/settings/services/mpsettings.js"></script>
+        <script src="modules/students/services/studentmanager.js"></script>
+        <script src="modules/students/services/studentprofile.js"></script>
+        <script src="modules/calendar/controllers/calendar.js"></script>
+        <script src="modules/core/controllers/home.js"></script>
+        <script src="modules/dashboard/controllers/dashboard.js"></script>
+        <script src="modules/newsfeed/controllers/newsfeed.js"></script>
+        <script src="modules/school/controllers/school.js"></script>
+        <script src="modules/settings/controllers/edit-settings.js"></script>
+        <script src="modules/settings/controllers/settings.js"></script>
+        <script src="modules/students/controllers/create-student.js"></script>
+        <script src="modules/students/controllers/edit-student.js"></script>
+        <script src="modules/students/controllers/student-list.js"></script>
+        <script src="modules/students/controllers/students.js"></script>
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+  </body>
+</html>
